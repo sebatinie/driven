@@ -1,6 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.http import JsonResponse
 from .services import fetch_user_data
 
