@@ -1,0 +1,1 @@
+[{"customer": "Alice", "products": [101, 102, 103], "timestamp": "2024-01-15T10:30:00"}, {"customer": "Bob", "products": [201], "timestamp": "2024-01-15T11:45:00"}]
