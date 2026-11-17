@@ -33,7 +33,15 @@ def validate_login(username, password, account_status):
 
     valid_username = "admin"
     valid_password = "Password123"
-
+    if account_status.lower() not in [
+        "active",
+        "locked",
+        "expired"
+    ]:
+        raise AuthenticationError(
+            "Invalid account status. "
+            "Status must be active, locked, or expired."
+        )
     if account_status.lower() == "locked":
         raise AccountLockedError()
 
